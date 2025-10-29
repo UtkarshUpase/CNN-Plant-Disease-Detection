@@ -177,11 +177,8 @@ def predict_disease(image_path):
     img_array = np.array(img, dtype=np.float32)
     img_array = np.expand_dims(img_array, axis=0) # Add batch dimension
 
-    # Check if model expects normalized data (0-1) or not (0-255)
-    # If your .h5 model had a Rescaling layer, you should normalize.
-    # If not, you might not need to. Let's assume normalization:
-    img_array = img_array / 255.0
-
+    # The model expects 0-255, so we DO NOT normalize
+    
     # Set the tensor
     interpreter.set_tensor(input_details[0]['index'], img_array)
 
