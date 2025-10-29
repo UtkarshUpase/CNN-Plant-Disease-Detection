@@ -6,10 +6,10 @@ import numpy as np
 import os
 import cv2
 from werkzeug.utils import secure_filename
-import sys
-import io
-sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
-sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
+# import sys
+# import io
+# sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
+# sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
 
 
 # Initialize the Flask application
