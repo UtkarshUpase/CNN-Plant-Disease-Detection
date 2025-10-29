@@ -1,7 +1,7 @@
 Flask
 gunicorn
 tflite-runtime
-numpy
+numpy==1.26.4  <-- This is the fix
 opencv-python-headless
 Pillow
 werkzeug
